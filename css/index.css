@@ -441,6 +441,17 @@ html, body {
     margin: .1rem;
     animation:linearMove 1.5s ease-in-out infinite both;
 }
+@-webkit-keyframes linearMove {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
 @keyframes linearMove {
     0%{
         transform: scale(1);
@@ -657,6 +668,32 @@ html, body {
 #page7 .thank1{
     animation: thank1 1.2s 1.5s both;
 }
+@-webkit-keyframes thank1 {
+    0%{
+        left: 0;top:1rem;
+    }
+    20%{
+        top:1.3rem
+    }
+    40%{
+        top:1rem
+    }
+    60%{
+        top:1.5rem
+    }
+    70%{
+        top:1rem
+    }
+    80%{
+        top:1.5rem
+    }
+    90%{
+        top:1.3rem
+    }
+    100%{
+        left: 5.8rem;top:1rem
+    }
+}
 @keyframes thank1 {
     0%{
         left: 0;top:1rem;
@@ -683,6 +720,14 @@ html, body {
         left: 5.8rem;top:1rem
     }
 }
+@-webkit-keyframes opcaty1 {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 @keyframes opcaty1 {
     0%{
         opacity: 0;
@@ -700,7 +745,7 @@ html, body {
     bottom: 10px;
     z-index: 150;
     margin-left: -7px;
-    opacity: 0;
+    /*opacity: 0;*/
 }
 
 .pre-wrap {
