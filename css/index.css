@@ -369,7 +369,14 @@ html, body {
     animation: arrowOut 1s  infinite both;
     -webkit-animation: arrowOut 1s  infinite both;
 }
-
+@-webkit-keyframes arrowOut {
+    0% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0;bottom:20px
+    }
+}
 @keyframes arrowOut {
     0% {
         opacity: 1
@@ -666,6 +673,7 @@ html, body {
     -webkit-animation: opcaty1 0.1s 2.6s both;
 }
 #page7 .thank1{
+    -webkit-animation: thank1 1.2s 1.5s both;
     animation: thank1 1.2s 1.5s both;
 }
 @-webkit-keyframes thank1 {
@@ -752,12 +760,10 @@ html, body {
     width: 24px;
     height: 14px;
     position: relative;
-    -webkit-animation: start 1.5s infinite ease-in-out;
-    -moz-animation: start 1.5s infinite ease-in-out;
-    animation: start 1.5s infinite ease-in-out;
-
+    -webkit-animation: start 1.5s infinite both;
+    -moz-animation: start 1.5s infinite both;
+    animation: start 1.5s infinite both;
 }
-
 .pre-box1, .pre-box2 {
     height: 15px;
     width: 11px;
